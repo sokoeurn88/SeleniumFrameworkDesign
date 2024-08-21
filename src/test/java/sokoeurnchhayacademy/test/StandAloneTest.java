@@ -1,4 +1,4 @@
-package sokoeurnchhayacademy;
+package sokoeurnchhayacademy.test;
 
 import java.time.Duration;
 import java.util.List;
@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import sokoeurnchhayacademy.pageobjects.LandingPage;
 
 public class StandAloneTest {
 	public static void main(String[] args) throws InterruptedException {
@@ -25,6 +26,9 @@ public class StandAloneTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.get("https://rahulshettyacademy.com/client/");
+		
+		LandingPage landingPage = new LandingPage(driver);
+		
 		driver.findElement(By.id("userEmail")).sendKeys("xyzstars@gmail.com");
 		driver.findElement(By.id("userPassword")).sendKeys("Xyz12345");
 		driver.findElement(By.id("login")).click();

@@ -1,4 +1,4 @@
-package sokoeurnchhayacademy;
+package sokoeurnchhayacademy.test;
 
 public class userpass {
 	
