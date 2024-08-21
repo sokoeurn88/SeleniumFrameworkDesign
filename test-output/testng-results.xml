@@ -1,32 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-21T07:47:26 CDT" name="Suite" finished-at="2024-08-21T07:47:36 CDT" duration-ms="10378">
+  <suite started-at="2024-08-21T10:15:03 CDT" name="Suite" finished-at="2024-08-21T10:15:42 CDT" duration-ms="39190">
     <groups>
-      <group name="ErrorHandling">
-        <method signature="ErrorValidationTest.loginErrorValidation()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@1ff4931d]" name="loginErrorValidation" class="sokoeurnchhayacademy.test.ErrorValidationTest"/>
-      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@13c9d689]" name="submitOrder" class="sokoeurnchhayacademy.test.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
     </groups>
-    <test started-at="2024-08-21T07:47:26 CDT" name="BaseTest" finished-at="2024-08-21T07:47:26 CDT" duration-ms="12">
+    <test started-at="2024-08-21T10:15:03 CDT" name="ErrorValidationTest" finished-at="2024-08-21T10:15:03 CDT" duration-ms="11">
+    </test> <!-- ErrorValidationTest -->
+    <test started-at="2024-08-21T10:15:03 CDT" name="BaseTest" finished-at="2024-08-21T10:15:03 CDT" duration-ms="11">
     </test> <!-- BaseTest -->
-    <test started-at="2024-08-21T07:47:26 CDT" name="SubmitOrderTest" finished-at="2024-08-21T07:47:26 CDT" duration-ms="12">
-    </test> <!-- SubmitOrderTest -->
-    <test started-at="2024-08-21T07:47:26 CDT" name="ErrorValidationTest" finished-at="2024-08-21T07:47:36 CDT" duration-ms="10378">
-      <class name="sokoeurnchhayacademy.test.ErrorValidationTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@1ff4931d]" started-at="2024-08-21T07:47:26 CDT" name="launchApplication" finished-at="2024-08-21T07:47:32 CDT" duration-ms="5902" status="PASS">
+    <test started-at="2024-08-21T10:15:03 CDT" name="SubmitOrderTest" finished-at="2024-08-21T10:15:42 CDT" duration-ms="39190">
+      <class name="sokoeurnchhayacademy.test.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@13c9d689]" started-at="2024-08-21T10:15:03 CDT" name="launchApplication" finished-at="2024-08-21T10:15:09 CDT" duration-ms="5943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="loginErrorValidation()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@1ff4931d]" started-at="2024-08-21T07:47:32 CDT" name="loginErrorValidation" finished-at="2024-08-21T07:47:33 CDT" duration-ms="1198" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@13c9d689]" started-at="2024-08-21T10:15:09 CDT" name="submitOrder" data-provider="getData" finished-at="2024-08-21T10:15:20 CDT" duration-ms="11076" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Xyz12345, product=ZARA COAT 3, email=xyzstars@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null
+at sokoeurnchhayacademy.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:57)
+at sokoeurnchhayacademy.test.SubmitOrderTest.submitOrder(SubmitOrderTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@1ff4931d]" started-at="2024-08-21T07:47:33 CDT" name="tearDown" finished-at="2024-08-21T07:47:36 CDT" duration-ms="3231" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@13c9d689]" started-at="2024-08-21T10:15:20 CDT" name="tearDown" finished-at="2024-08-21T10:15:23 CDT" duration-ms="3227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- sokoeurnchhayacademy.test.ErrorValidationTest -->
-    </test> <!-- ErrorValidationTest -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@13c9d689]" started-at="2024-08-21T10:15:23 CDT" name="launchApplication" finished-at="2024-08-21T10:15:28 CDT" duration-ms="4415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@13c9d689]" started-at="2024-08-21T10:15:28 CDT" name="submitOrder" data-provider="getData" finished-at="2024-08-21T10:15:39 CDT" duration-ms="11014" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Xyz12345, product=ADIDAS ORIGINAL, email=xyzstars@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null
+at sokoeurnchhayacademy.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:57)
+at sokoeurnchhayacademy.test.SubmitOrderTest.submitOrder(SubmitOrderTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@13c9d689]" started-at="2024-08-21T10:15:39 CDT" name="tearDown" finished-at="2024-08-21T10:15:42 CDT" duration-ms="3220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- sokoeurnchhayacademy.test.SubmitOrderTest -->
+    </test> <!-- SubmitOrderTest -->
   </suite> <!-- Suite -->
 </testng-results>
