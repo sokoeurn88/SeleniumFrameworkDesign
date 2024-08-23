@@ -18,6 +18,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import sokoeurnchhayacademy.TestComponents.BaseTest;
+import sokoeurnchhayacademy.TestComponents.IRetryAnalyzer_Demo;
 import sokoeurnchhayacademy.pageobjects.CartPage;
 import sokoeurnchhayacademy.pageobjects.CheckoutPage;
 import sokoeurnchhayacademy.pageobjects.ConfirmationPage;
@@ -28,7 +29,7 @@ import sokoeurnchhayacademy.pageobjects.ProductCatalogue;
 public class SubmitOrderTest extends BaseTest {
 	String productName = "ZARA COAT 3";
 	
-	@Test(dataProvider="getData", groups="Purchase")
+	@Test(dataProvider="getData", groups="Purchase", retryAnalyzer=IRetryAnalyzer_Demo.class)
 	public void submitOrder(HashMap<String,String> input) throws IOException, InterruptedException{
 		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
 		
@@ -59,28 +60,6 @@ public class SubmitOrderTest extends BaseTest {
 		OrderPage ordersPage = productCatalogue.goToOrderPage();
 		ordersPage.VerifyOrderDisplay(productName);
 	}
-	
-	public String getScreenshot(String testCaseName) throws IOException {
-		
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		File source = ts.getScreenshotAs(OutputType.FILE);
-		File file = new File(System.getProperty("user.dir")+"//reports//"+ testCaseName +".png");
-		
-		//package
-		FileUtils.copyFile(source, file);
-		
-		return System.getProperty("user.dir")+"//reports//"+ testCaseName +".png";
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	@DataProvider
 	public Object[][] getData() throws IOException {

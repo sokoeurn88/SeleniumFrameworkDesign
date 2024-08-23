@@ -9,27 +9,88 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">ErrorValidationTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">11</td><td>Purchase</td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">BaseTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">11</td><td>Purchase</td><td></td></tr>
-<tr><td><a href="#t2">SubmitOrderTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">39,190</td><td>Purchase</td><td></td></tr>
-<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">39,212</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">BaseTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">10</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">ErrorValidationTest</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">47,965</td><td></td><td></td></tr>
+<tr><td><a href="#t2">SubmitOrderTest</a></td><td class="num">0</td><td class="num attn">1</td><td class="num attn">2</td><td class="num attn">2</td><td class="num">77,421</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num attn">1</th><th class="num attn">3</th><th class="num attn">3</th><th class="num">125,396</th><th colspan="2"></th></tr>
 </table>
 <table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
-<tbody id="t1"><tr><th colspan="4" class="invisible"/></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">SubmitOrderTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">sokoeurnchhayacademy.test.SubmitOrderTest</td><td><a href="#m0">submitOrder</a></td><td rowspan="2">1724253309328</td><td rowspan="2">11076</td></tr><tr class="failedeven"><td><a href="#m1">submitOrder</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">ErrorValidationTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">sokoeurnchhayacademy.test.ErrorValidationTest</td><td><a href="#m0">ProductErrorValidation</a></td><td rowspan="1">1724421117187</td><td rowspan="1">13065</td></tr><tr><th colspan="4">ErrorValidationTest &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">sokoeurnchhayacademy.test.ErrorValidationTest</td><td><a href="#m1">ProductErrorValidation</a></td><td rowspan="1">1724421101930</td><td rowspan="1">10355</td></tr><tr><th colspan="4">ErrorValidationTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">sokoeurnchhayacademy.test.ErrorValidationTest</td><td><a href="#m2">loginErrorValidation</a></td><td rowspan="1">1724421136355</td><td rowspan="1">4042</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">SubmitOrderTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">sokoeurnchhayacademy.test.SubmitOrderTest</td><td><a href="#m3">submitOrder</a></td><td rowspan="2">1724421158408</td><td rowspan="2">10988</td></tr><tr class="failedeven"><td><a href="#m4">submitOrder</a></td></tr><tr><th colspan="4">SubmitOrderTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">sokoeurnchhayacademy.test.SubmitOrderTest</td><td><a href="#m5">orderHistoryTest</a></td><td rowspan="1">1724421173031</td><td rowspan="1">0</td></tr><tr><th colspan="4">SubmitOrderTest &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="2">sokoeurnchhayacademy.test.SubmitOrderTest</td><td><a href="#m6">submitOrder</a></td><td rowspan="2">1724421140149</td><td rowspan="2">11057</td></tr><tr class="retriedeven"><td><a href="#m7">submitOrder</a></td></tr></tbody>
 </table>
-<h2>ErrorValidationTest</h2><h2>BaseTest</h2><h2>SubmitOrderTest</h2><h3 id="m0">sokoeurnchhayacademy.test.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Xyz12345, product=ZARA COAT 3, email=xyzstars@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
-	at sokoeurnchhayacademy.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:57)
-	at sokoeurnchhayacademy.test.SubmitOrderTest.submitOrder(SubmitOrderTest.java:33)
+<h2>BaseTest</h2><h2>ErrorValidationTest</h2><h3 id="m0">sokoeurnchhayacademy.test.ErrorValidationTest#ProductErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\sokoeurn chhay\App...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59793/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 61bd237e6293473f7da0b248b419f3ee
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at sokoeurnchhayacademy.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:36)
+	at sokoeurnchhayacademy.pageobjects.ProductCatalogue.getProductList(ProductCatalogue.java:37)
+	at sokoeurnchhayacademy.test.ErrorValidationTest.ProductErrorValidation(ErrorValidationTest.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 ... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">sokoeurnchhayacademy.test.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Xyz12345, product=ADIDAS ORIGINAL, email=xyzstars@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
+<h3 id="m1">sokoeurnchhayacademy.test.ErrorValidationTest#ProductErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\sokoeurn chhay\App...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59754}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59754/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 86aeab54857bfffc443965cd5861c349
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at sokoeurnchhayacademy.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:36)
+	at sokoeurnchhayacademy.pageobjects.ProductCatalogue.getProductList(ProductCatalogue.java:37)
+	at sokoeurnchhayacademy.test.ErrorValidationTest.ProductErrorValidation(ErrorValidationTest.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">sokoeurnchhayacademy.test.ErrorValidationTest#loginErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>SubmitOrderTest</h2><h3 id="m3">sokoeurnchhayacademy.test.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Xyz12345, product=ADIDAS ORIGINAL, email=xyzstars@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
 	at sokoeurnchhayacademy.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:57)
-	at sokoeurnchhayacademy.test.SubmitOrderTest.submitOrder(SubmitOrderTest.java:33)
+	at sokoeurnchhayacademy.test.SubmitOrderTest.submitOrder(SubmitOrderTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">sokoeurnchhayacademy.test.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Xyz12345, product=ZARA COAT 3, email=xyzstars@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
+	at sokoeurnchhayacademy.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:57)
+	at sokoeurnchhayacademy.test.SubmitOrderTest.submitOrder(SubmitOrderTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">sokoeurnchhayacademy.test.SubmitOrderTest#orderHistoryTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method sokoeurnchhayacademy.test.SubmitOrderTest.orderHistoryTest() on instance sokoeurnchhayacademy.test.SubmitOrderTest@49b2a47d depends on not successfully finished methods 
+[sokoeurnchhayacademy.test.SubmitOrderTest.submitOrder() on instance sokoeurnchhayacademy.test.SubmitOrderTest@49b2a47d]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">sokoeurnchhayacademy.test.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Xyz12345, product=ADIDAS ORIGINAL, email=xyzstars@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
+	at sokoeurnchhayacademy.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:57)
+	at sokoeurnchhayacademy.test.SubmitOrderTest.submitOrder(SubmitOrderTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">sokoeurnchhayacademy.test.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Xyz12345, product=ZARA COAT 3, email=xyzstars@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
+	at sokoeurnchhayacademy.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:57)
+	at sokoeurnchhayacademy.test.SubmitOrderTest.submitOrder(SubmitOrderTest.java:38)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)

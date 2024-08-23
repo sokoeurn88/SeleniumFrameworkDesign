@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import sokoeurnchhayacademy.TestComponents.BaseTest;
+import sokoeurnchhayacademy.TestComponents.IRetryAnalyzer_Demo;
 import sokoeurnchhayacademy.pageobjects.CartPage;
 import sokoeurnchhayacademy.pageobjects.CheckoutPage;
 import sokoeurnchhayacademy.pageobjects.ConfirmationPage;
@@ -26,7 +27,7 @@ public class ErrorValidationTest extends BaseTest {
 
 	}
 	
-	@Test
+	@Test(retryAnalyzer=IRetryAnalyzer_Demo.class)
 	public void ProductErrorValidation() throws IOException, InterruptedException{
 		
 		String productName = "ZARA COAT 3";
