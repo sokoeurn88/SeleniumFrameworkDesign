@@ -2,22 +2,22 @@
 <testng-results retried="3" ignored="3" total="11" passed="1" failed="3" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-23T09:19:31 CDT" name="Surefire suite" finished-at="2024-08-23T09:21:33 CDT" duration-ms="122005">
+  <suite started-at="2024-08-24T12:00:27 CDT" name="Surefire suite" finished-at="2024-08-24T12:02:44 CDT" duration-ms="137709">
     <groups>
       <group name="ErrorHandling">
-        <method signature="ErrorValidationTest.loginErrorValidation()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@4c6e276e]" name="loginErrorValidation" class="sokoeurnchhayacademy.test.ErrorValidationTest"/>
+        <method signature="ErrorValidationTest.loginErrorValidation()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@1198b989]" name="loginErrorValidation" class="sokoeurnchhayacademy.test.ErrorValidationTest"/>
       </group> <!-- ErrorHandling -->
       <group name="Purchase">
-        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f]" name="submitOrder" class="sokoeurnchhayacademy.test.SubmitOrderTest"/>
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe]" name="submitOrder" class="sokoeurnchhayacademy.test.SubmitOrderTest"/>
       </group> <!-- Purchase -->
     </groups>
-    <test started-at="2024-08-23T09:19:31 CDT" name="Surefire test" finished-at="2024-08-23T09:21:33 CDT" duration-ms="122005">
+    <test started-at="2024-08-24T12:00:27 CDT" name="Surefire test" finished-at="2024-08-24T12:02:44 CDT" duration-ms="137709">
       <class name="sokoeurnchhayacademy.test.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f]" started-at="2024-08-23T09:20:17 CDT" name="launchApplication" finished-at="2024-08-23T09:20:22 CDT" duration-ms="4236" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe]" started-at="2024-08-24T12:01:13 CDT" name="launchApplication" finished-at="2024-08-24T12:01:17 CDT" duration-ms="4368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="submitOrder(java.util.HashMap)[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f]" started-at="2024-08-23T09:20:22 CDT" name="submitOrder" data-provider="getData" finished-at="2024-08-23T09:20:33 CDT" duration-ms="11101" status="SKIP">
+        <test-method retried="true" signature="submitOrder(java.util.HashMap)[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe]" started-at="2024-08-24T12:01:17 CDT" name="submitOrder" data-provider="getData" finished-at="2024-08-24T12:01:28 CDT" duration-ms="11036" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -70,15 +70,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f]" started-at="2024-08-23T09:20:33 CDT" name="tearDown" finished-at="2024-08-23T09:20:36 CDT" duration-ms="3221" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe]" started-at="2024-08-24T12:01:28 CDT" name="tearDown" finished-at="2024-08-24T12:01:31 CDT" duration-ms="3254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f]" started-at="2024-08-23T09:20:36 CDT" name="launchApplication" finished-at="2024-08-23T09:20:41 CDT" duration-ms="4915" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe]" started-at="2024-08-24T12:01:31 CDT" name="launchApplication" finished-at="2024-08-24T12:01:36 CDT" duration-ms="4300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f]" started-at="2024-08-23T09:20:41 CDT" name="submitOrder" data-provider="getData" finished-at="2024-08-23T09:20:52 CDT" duration-ms="10997" status="FAIL">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe]" started-at="2024-08-24T12:01:36 CDT" name="submitOrder" data-provider="getData" finished-at="2024-08-24T12:01:47 CDT" duration-ms="10992" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -131,15 +131,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f]" started-at="2024-08-23T09:20:52 CDT" name="tearDown" finished-at="2024-08-23T09:20:55 CDT" duration-ms="3234" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe]" started-at="2024-08-24T12:01:47 CDT" name="tearDown" finished-at="2024-08-24T12:01:50 CDT" duration-ms="3232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f]" started-at="2024-08-23T09:20:55 CDT" name="launchApplication" finished-at="2024-08-23T09:20:59 CDT" duration-ms="4230" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe]" started-at="2024-08-24T12:01:50 CDT" name="launchApplication" finished-at="2024-08-24T12:01:54 CDT" duration-ms="4382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="submitOrder(java.util.HashMap)[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f]" started-at="2024-08-23T09:20:59 CDT" name="submitOrder" data-provider="getData" finished-at="2024-08-23T09:21:11 CDT" duration-ms="11125" status="SKIP">
+        <test-method retried="true" signature="submitOrder(java.util.HashMap)[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe]" started-at="2024-08-24T12:01:54 CDT" name="submitOrder" data-provider="getData" finished-at="2024-08-24T12:02:05 CDT" duration-ms="11007" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -192,15 +192,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f]" started-at="2024-08-23T09:21:11 CDT" name="tearDown" finished-at="2024-08-23T09:21:14 CDT" duration-ms="3252" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe]" started-at="2024-08-24T12:02:05 CDT" name="tearDown" finished-at="2024-08-24T12:02:08 CDT" duration-ms="3206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f]" started-at="2024-08-23T09:21:14 CDT" name="launchApplication" finished-at="2024-08-23T09:21:16 CDT" duration-ms="1730" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe]" started-at="2024-08-24T12:02:08 CDT" name="launchApplication" finished-at="2024-08-24T12:02:20 CDT" duration-ms="11998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f]" started-at="2024-08-23T09:21:16 CDT" name="submitOrder" data-provider="getData" finished-at="2024-08-23T09:21:30 CDT" duration-ms="14338" status="FAIL">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe]" started-at="2024-08-24T12:02:20 CDT" name="submitOrder" data-provider="getData" finished-at="2024-08-24T12:02:34 CDT" duration-ms="13509" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -253,19 +253,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f]" started-at="2024-08-23T09:21:30 CDT" name="tearDown" finished-at="2024-08-23T09:21:33 CDT" duration-ms="3234" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe]" started-at="2024-08-24T12:02:34 CDT" name="tearDown" finished-at="2024-08-24T12:02:44 CDT" duration-ms="10474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="orderHistoryTest()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f]" started-at="2024-08-23T09:21:33 CDT" name="orderHistoryTest" finished-at="2024-08-23T09:21:33 CDT" depends-on-methods="sokoeurnchhayacademy.test.SubmitOrderTest.submitOrder" duration-ms="0" status="SKIP">
+        <test-method signature="orderHistoryTest()[pri:0, instance:sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe]" started-at="2024-08-24T12:02:44 CDT" name="orderHistoryTest" finished-at="2024-08-24T12:02:44 CDT" depends-on-methods="sokoeurnchhayacademy.test.SubmitOrderTest.submitOrder" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method sokoeurnchhayacademy.test.SubmitOrderTest.orderHistoryTest() on instance sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f depends on not successfully finished methods 
-[sokoeurnchhayacademy.test.SubmitOrderTest.submitOrder() on instance sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f]]]>
+              <![CDATA[Method sokoeurnchhayacademy.test.SubmitOrderTest.orderHistoryTest() on instance sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe depends on not successfully finished methods 
+[sokoeurnchhayacademy.test.SubmitOrderTest.submitOrder() on instance sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method sokoeurnchhayacademy.test.SubmitOrderTest.orderHistoryTest() on instance sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f depends on not successfully finished methods 
-[sokoeurnchhayacademy.test.SubmitOrderTest.submitOrder() on instance sokoeurnchhayacademy.test.SubmitOrderTest@1a84f40f]
+              <![CDATA[java.lang.Throwable: Method sokoeurnchhayacademy.test.SubmitOrderTest.orderHistoryTest() on instance sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe depends on not successfully finished methods 
+[sokoeurnchhayacademy.test.SubmitOrderTest.submitOrder() on instance sokoeurnchhayacademy.test.SubmitOrderTest@60dcc9fe]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -298,27 +298,27 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
         </test-method> <!-- orderHistoryTest -->
       </class> <!-- sokoeurnchhayacademy.test.SubmitOrderTest -->
       <class name="sokoeurnchhayacademy.test.ErrorValidationTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@4c6e276e]" started-at="2024-08-23T09:19:31 CDT" name="launchApplication" finished-at="2024-08-23T09:19:37 CDT" duration-ms="5808" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@1198b989]" started-at="2024-08-24T12:00:27 CDT" name="launchApplication" finished-at="2024-08-24T12:00:32 CDT" duration-ms="5343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="ProductErrorValidation()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@4c6e276e]" started-at="2024-08-23T09:19:37 CDT" name="ProductErrorValidation" finished-at="2024-08-23T09:19:47 CDT" duration-ms="10312" status="SKIP">
+        <test-method retried="true" signature="ProductErrorValidation()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@1198b989]" started-at="2024-08-24T12:00:32 CDT" name="ProductErrorValidation" finished-at="2024-08-24T12:00:42 CDT" duration-ms="10334" status="SKIP">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: '4.23.1', revision: '656257d8e9'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\sokoeurn chhay\App...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60649}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60649/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a1d748b242ed3e0b67b3bd6c8c62e474]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\sokoeurn chhay\App...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49851/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e39ea1d285f66857f7aa54a4c20b140c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: '4.23.1', revision: '656257d8e9'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\sokoeurn chhay\App...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60649}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60649/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a1d748b242ed3e0b67b3bd6c8c62e474
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\sokoeurn chhay\App...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49851/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e39ea1d285f66857f7aa54a4c20b140c
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 at sokoeurnchhayacademy.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:36)
@@ -361,31 +361,31 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@4c6e276e]" started-at="2024-08-23T09:19:47 CDT" name="tearDown" finished-at="2024-08-23T09:19:50 CDT" duration-ms="3213" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@1198b989]" started-at="2024-08-24T12:00:42 CDT" name="tearDown" finished-at="2024-08-24T12:00:46 CDT" duration-ms="3189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@4c6e276e]" started-at="2024-08-23T09:19:50 CDT" name="launchApplication" finished-at="2024-08-23T09:19:55 CDT" duration-ms="4311" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@1198b989]" started-at="2024-08-24T12:00:46 CDT" name="launchApplication" finished-at="2024-08-24T12:00:50 CDT" duration-ms="4356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@4c6e276e]" started-at="2024-08-23T09:19:55 CDT" name="ProductErrorValidation" finished-at="2024-08-23T09:20:05 CDT" duration-ms="10298" status="FAIL">
+        <test-method signature="ProductErrorValidation()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@1198b989]" started-at="2024-08-24T12:00:50 CDT" name="ProductErrorValidation" finished-at="2024-08-24T12:01:00 CDT" duration-ms="10296" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: '4.23.1', revision: '656257d8e9'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\sokoeurn chhay\App...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60672}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60672/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b80e087e2e26c370e95af2763b9afe09]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\sokoeurn chhay\App...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49874}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49874/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c98a9d6ae845befeba3530f4d7722038]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: '4.23.1', revision: '656257d8e9'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\sokoeurn chhay\App...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60672}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60672/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b80e087e2e26c370e95af2763b9afe09
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\sokoeurn chhay\App...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49874}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49874/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c98a9d6ae845befeba3530f4d7722038
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 at sokoeurnchhayacademy.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:36)
@@ -428,19 +428,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@4c6e276e]" started-at="2024-08-23T09:20:05 CDT" name="tearDown" finished-at="2024-08-23T09:20:08 CDT" duration-ms="3259" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@1198b989]" started-at="2024-08-24T12:01:00 CDT" name="tearDown" finished-at="2024-08-24T12:01:03 CDT" duration-ms="3191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@4c6e276e]" started-at="2024-08-23T09:20:08 CDT" name="launchApplication" finished-at="2024-08-23T09:20:13 CDT" duration-ms="4505" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@1198b989]" started-at="2024-08-24T12:01:03 CDT" name="launchApplication" finished-at="2024-08-24T12:01:08 CDT" duration-ms="4553" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="loginErrorValidation()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@4c6e276e]" started-at="2024-08-23T09:20:13 CDT" name="loginErrorValidation" finished-at="2024-08-23T09:20:14 CDT" duration-ms="1226" status="PASS">
+        <test-method signature="loginErrorValidation()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@1198b989]" started-at="2024-08-24T12:01:08 CDT" name="loginErrorValidation" finished-at="2024-08-24T12:01:09 CDT" duration-ms="1183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@4c6e276e]" started-at="2024-08-23T09:20:14 CDT" name="tearDown" finished-at="2024-08-23T09:20:17 CDT" duration-ms="3178" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sokoeurnchhayacademy.test.ErrorValidationTest@1198b989]" started-at="2024-08-24T12:01:09 CDT" name="tearDown" finished-at="2024-08-24T12:01:12 CDT" duration-ms="3222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
